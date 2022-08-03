@@ -17,13 +17,9 @@ public class HeadManager {
             // 如果存在该用户信息
             // 判断本地是否有该头像
             File file = new File(ConfigManager.getInstance().getDownLoadPath() + uid + ".jpg");
-            if (file.exists() && (url.equals(biliLive.getUserMap().get(uid).getFace()) || url.equals(UserDataManager.getUser(uid).getFace()))) {
-                // 如果有且相同，则返回true
-                return true;
-            } else {
-                // 如果没有说明本地没有该头像，或者本地有该头像但是不同，则返回false
-                return false;
-            }
+            // 如果有且相同，则返回true
+            // 如果没有说明本地没有该头像，或者本地有该头像但是不同，则返回false
+            return file.exists() && (url.equals(biliLive.getUserMap().get(uid).getFace()) || url.equals(UserDataManager.getUser(uid).getFace()));
         } else {
             // 如果不存在该用户信息
             return false;
