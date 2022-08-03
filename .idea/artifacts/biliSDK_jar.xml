@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="biliSDK:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/biliSDK_jar</output-path>
+    <root id="archive" name="biliSDK.jar">
+      <element id="module-output" name="biliSDK" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/neovisionaries/nv-websocket-client/1.3/nv-websocket-client-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.83/fastjson-1.2.83.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.15/commons-codec-1.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/aventrix/jnanoid/jnanoid/2.0.0/jnanoid-2.0.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
