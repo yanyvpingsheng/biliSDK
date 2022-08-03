@@ -49,7 +49,11 @@ public class HeadManager {
                     // 创建缓冲区
                     byte[] bytes = new byte[1024];
                     // 创建输出流
-                    OutputStream outputStream = new FileOutputStream(ConfigManager.getInstance().getDownLoadPath() + uid + ".jpg");
+                    File file = new File(ConfigManager.getInstance().getDownLoadPath());
+                    if (!file.exists()) {
+                        boolean wasSuccess = file.mkdirs();
+                    }
+                    OutputStream outputStream = new FileOutputStream(getPath(uid));
                     // 循环读取输入流
                     int len;
                     while ((len = inputStream.read(bytes)) != -1) {

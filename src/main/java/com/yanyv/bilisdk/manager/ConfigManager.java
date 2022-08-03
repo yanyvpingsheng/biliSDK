@@ -96,6 +96,10 @@ public class ConfigManager {
         if (!file.exists()) {
             try {
                 // 尝试创建配置文件，如果成功则返回默认配置
+                File dir = new File(file.getParent());
+                if (!dir.exists()) {
+                    boolean wasSuccess = dir.mkdirs();
+                }
                 if(file.createNewFile()) {
                     return createConfig();
                 }
