@@ -1,3 +1,4 @@
 # 项目排除路径
 /out/
 /target/
+/src/main/java/com/yanyv/bilisdk/App.java
