@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <h4>BiliLive</h4>
+ * <p>BiliLive</p>
  * <p>用于控制直播间的操作</p>
  * @author 烟雨平生
  * @version V0.1.0
@@ -70,12 +70,6 @@ public class BiliLive {
 	 *
 	 * @param listener 监听器
 	 * @author 烟雨平生 yanyvpingsheng@qq.com
-	 *<p>
-	 *--------------------------------------------------------------<br>
-	 * 修改履历：<br>
-	 *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-	 *--------------------------------------------------------------<br>
-	 *</p>
 	 */
 	public void addListener(LiveListener listener) {
 		this.listeners.add(listener);
@@ -86,12 +80,6 @@ public class BiliLive {
 	 * <p>Description : 连接直播间
 	 *
 	 * @author 烟雨平生 yanyvpingsheng@qq.com
-	 *<p>
-	 *--------------------------------------------------------------<br>
-	 * 修改履历：<br>
-	 *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-	 *--------------------------------------------------------------<br>
-	 *</p>
 	 */
 	public void connect() {
 		BiliUtil.init(biliConfig);
@@ -228,12 +216,6 @@ public class BiliLive {
 	 * <p>Description : 断开连接
 	 *
 	 * @author 烟雨平生 yanyvpingsheng@qq.com
-	 *<p>
-	 *--------------------------------------------------------------<br>
-	 * 修改履历：<br>
-	 *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-	 *--------------------------------------------------------------<br>
-	 *</p>
 	 */
 	public void disconnect() {
 		// 主动断开连接
@@ -253,7 +235,7 @@ public class BiliLive {
 	}
 
 	/**
-	 * <h4>receiveMessage</h4>
+	 * <p>receiveMessage</p>
 	 * <p>处理弹幕消息</p>
 	 * @param obj 弹幕消息数据
 	 * @author 烟雨平生
@@ -381,6 +363,8 @@ public class BiliLive {
 
 	/**
 	 * 懒汉式单例
+	 * @param config 哔哩哔哩配置
+	 * @return 实例
 	 */
 	public static BiliLive getInstance(BiliConfig config) {
 		if(biliLive == null) {

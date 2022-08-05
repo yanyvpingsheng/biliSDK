@@ -8,13 +8,13 @@ import com.yanyv.bilisdk.vo.BiliUser;
 import java.util.List;
 
 /**
- * <h4>UnknownCommentController</h4>
+ * <p>UnknownCommentController</p>
  * <p>处理弹幕姬的未知消息</p>
  * @author 烟雨平生
  */
 public class UnknownCommentController {
     /**
-     * <h4></h4>
+     *
      * <p>根据未知消息的json对象中的cmd属性分发事件</p>
      * @param json 未知消息的json对象
      * @param listeners 开发者自定义的监听器类，需要实现LiveListener接口

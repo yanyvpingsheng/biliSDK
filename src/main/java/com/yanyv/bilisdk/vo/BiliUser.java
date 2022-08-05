@@ -3,7 +3,7 @@ package com.yanyv.bilisdk.vo;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * <h4>BiliUser</h4>
+ * <p>BiliUser</p>
  * <p>用户信息</p>
  * @author 烟雨平生
  */
@@ -33,12 +33,6 @@ public class BiliUser {
      * @param guardLevel   用户大航海等级
      * @param score        用户积分
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public BiliUser(Long uid, String uname, String face, Integer guardLevel, Integer score) {
         this.uid = uid;
@@ -53,12 +47,6 @@ public class BiliUser {
      * <p>Description : 无参构造方法
      *
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public BiliUser() {
     }
@@ -123,14 +111,8 @@ public class BiliUser {
      * <p>Method ：addGameScore
      * <p>Description : 增加游戏积分
      *
-     * @param add
+     * @param add 增加的游戏积分
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public void addGameScore(Integer add) {
         this.gameScore += add;

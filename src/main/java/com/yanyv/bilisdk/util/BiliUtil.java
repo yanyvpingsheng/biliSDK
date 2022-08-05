@@ -25,12 +25,6 @@ import java.util.regex.Pattern;
  * @author 烟雨平生 yanyvpingsheng@qq.com
  * @version 1.0.0
  * 建立与哔哩哔哩世界连接的工具类
- * <p>
- * --------------------------------------------------------------<br>
- * 修改履历：<br>
- * <li> 2022/8/2，yanyvpingsheng@qq.com，创建文件；<br>
- * --------------------------------------------------------------<br>
- * </p>
  */
 public final class BiliUtil {
     // 哔哩哔哩世界的域名
@@ -60,12 +54,6 @@ public final class BiliUtil {
      * @param data 请求体数据，json格式
      * @return 返回哔哩哔哩世界的响应结果
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static JSONObject post(String uri, JSONObject data) {
         // 创建请求头
@@ -91,12 +79,6 @@ public final class BiliUtil {
      * @param content 请求体数据，json格式
      * @author 烟雨平生 yanyvpingsheng@qq.com
      * @return 待签名信息
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static String getBiliWaitSign(String content) {
         // md5加密请求内容
@@ -121,12 +103,6 @@ public final class BiliUtil {
      * @param content 请求体数据，json格式
      * @author 烟雨平生 yanyvpingsheng@qq.com
      * @return 请求头
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static String getBiliHeader(String content) {
         // 获取待签名信息
@@ -146,21 +122,13 @@ public final class BiliUtil {
     }
 
     /**
-     * 替换字符串中 ${} 标识的变量
-     */
-    /**
      * <p>Method ：replaceVariable
      * <p>Description : 替换字符串中 ${} 标识的变量
      *
      * @param template 模板
      * @param properties 变量值
+     * @return 替换后的字符串
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static String replaceVariable(String template, Map<String, Object> properties) {
         StringBuffer sb = new StringBuffer();
@@ -186,12 +154,6 @@ public final class BiliUtil {
      * @param key 密钥
      * @return 加密结果
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static String sign(String data, String key) {
         Mac sha256_HMAC = null;
@@ -219,14 +181,8 @@ public final class BiliUtil {
      * <p>Method ：init
      * <p>Description : 初始化，必须调用此方法才能正确发起请求
      *
-     * @param config
+     * @param config 配置信息
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static void init(BiliConfig config) {
         BiliUtil.accessKeyId = config.getAccessKeyId();

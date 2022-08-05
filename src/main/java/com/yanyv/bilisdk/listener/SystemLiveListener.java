@@ -33,12 +33,6 @@ public class SystemLiveListener extends LiveAdapter {
      * @param userName 用户名
      * @param face     用户头像
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public void updateUserInfo(Long uid, String userName, String face) {
         // 当收到消息时将用户转为user对象放入BiliLive的userMap中

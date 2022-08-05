@@ -10,12 +10,6 @@ import java.util.Random;
  * @author 烟雨平生 yanyvpingsheng@qq.com
  * @version 1.0.0
  * NanoId工具
- * <p>
- * --------------------------------------------------------------<br>
- * 修改履历：<br>
- * <li> 2022/5/29，yanyvpingsheng@qq.com，创建文件；<br>
- * --------------------------------------------------------------<br>
- * </p>
  */
 public final class NanoIdUtil {
     public static final SecureRandom DEFAULT_NUMBER_GENERATOR = new SecureRandom();
@@ -30,12 +24,6 @@ public final class NanoIdUtil {
      * <p>Description : 使用预设值生成nanoId
      * @return nanoId
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static String randomNanoId() {
         return randomNanoId(DEFAULT_NUMBER_GENERATOR, DEFAULT_ALPHABET, DEFAULT_SIZE);
@@ -48,13 +36,8 @@ public final class NanoIdUtil {
      * @param random 随机数生成器
      * @param alphabet 字符集
      * @param size 字符串长度
+     * @return nanoId
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static String randomNanoId(Random random, char[] alphabet, int size) {
         if (random == null) {

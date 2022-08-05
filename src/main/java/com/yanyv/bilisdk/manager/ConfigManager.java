@@ -23,6 +23,7 @@ public class ConfigManager {
 
     /**
      * 通过文件加载配置
+     * @param config 配置信息
      */
     public ConfigManager(JSONObject config) {
         this.config = config;

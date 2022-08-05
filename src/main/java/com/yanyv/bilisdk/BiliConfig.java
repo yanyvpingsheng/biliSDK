@@ -1,18 +1,9 @@
 package com.yanyv.bilisdk;
 
 /**
- * <p>Class       : com.yanyv.bilisdk.BiliConfig
- * <p>Descdription: 配置类
- *
- * @author 烟雨平生 yanyvpingsheng@qq.com
- * @version 1.0.0
- * 配置
- * <p>
- * --------------------------------------------------------------<br>
- * 修改履历：<br>
- * <li> 2022/8/2，yanyvpingsheng@qq.com，创建文件；<br>
- * --------------------------------------------------------------<br>
- * </p>
+ * <p>BiliConfig</p>
+ * <p>配置类</p>
+ * @author 烟雨平生
  */
 public class BiliConfig {
 
@@ -31,12 +22,6 @@ public class BiliConfig {
      * @param appid           appid
      * @param code            身份码
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public BiliConfig(String accessKeyId, String accessKeySecret, long appid, String code) {
         this.accessKeyId = accessKeyId;

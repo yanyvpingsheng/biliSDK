@@ -19,12 +19,6 @@ import java.io.IOException;
  * @author 烟雨平生 yanyvpingsheng@qq.com
  * @version 1.0.0
  * HTTP工具类
- * <p>
- * --------------------------------------------------------------<br>
- * 修改履历：<br>
- * <li> 2022/8/2，yanyvpingsheng@qq.com，创建文件；<br>
- * --------------------------------------------------------------<br>
- * </p>
  */
 public final class HttpUtil {
 
@@ -38,13 +32,8 @@ public final class HttpUtil {
      * @param url url
      * @param headers 请求头
      * @param param 请求体数据，json格式
+     * @return 返回哔哩哔哩世界的响应结果
      * @author 烟雨平生 yanyvpingsheng@qq.com
-     *<p>
-     *--------------------------------------------------------------<br>
-     * 修改履历：<br>
-     *        <li> 2022/8/3，yanyvpingsheng@qq.com，创建方法；<br>
-     *--------------------------------------------------------------<br>
-     *</p>
      */
     public static JSONObject doPost(String url, Header[] headers, JSONObject param) {
         //定义接收数据
